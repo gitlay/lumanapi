@@ -4,8 +4,63 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d26acaa1fb2b708a3d4753b863030c57",
+    "content-hash": "96b123aa46a9ac075c4d1e5c7ea392b6",
     "packages": [
+        {
+            "name": "albertcht/lumen-helpers",
+            "version": "v0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/albertcht/lumen-helpers.git",
+                "reference": "d1227d0279eb85e3fc854a07f54ebaba7fdc37c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/albertcht/lumen-helpers/zipball/d1227d0279eb85e3fc854a07f54ebaba7fdc37c9",
+                "reference": "d1227d0279eb85e3fc854a07f54ebaba7fdc37c9",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "laravel/lumen-framework": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*",
+                "php": "^5.6|^7.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "phpunit/phpunit": "^6.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "AlbertCht\\Lumen\\Helpers\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Albert Chen",
+                    "email": "albert.cht@gmail.com"
+                }
+            ],
+            "description": "To support Laravel 's unsupported features in Lumen.",
+            "keywords": [
+                "heplers",
+                "laravel",
+                "lumen"
+            ],
+            "time": "2018-10-21T08:51:23+00:00"
+        },
         {
             "name": "dingo/api",
             "version": "v2.0.0-alpha1",

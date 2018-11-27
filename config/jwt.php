@@ -65,7 +65,6 @@ return [
         |--------------------------------------------------------------------------
         |
         | A path or resource to your private key.
-        |
         | E.g. 'file://path/to/private/key'
         |
         */
