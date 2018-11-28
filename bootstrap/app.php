@@ -136,4 +136,12 @@ $app->router->group([
     require __DIR__.'/../routes/web.php';
 });
 
+/*
+ * 配置日志文件为每日
+ */
+$app->configureMonologUsing(function(Monolog\Logger $monoLog) use ($app){
+    return $monoLog->pushHandler(
+        new \Monolog\Handler\RotatingFileHandler($app->storagePath().'/logs/lumen.log',5)
+    );
+});
 return $app;
