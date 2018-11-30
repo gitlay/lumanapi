@@ -144,4 +144,10 @@ $app->configureMonologUsing(function(Monolog\Logger $monoLog) use ($app){
         new \Monolog\Handler\RotatingFileHandler($app->storagePath().'/logs/lumen.log',5)
     );
 });
+
+$app->withFacades(true, [
+    'Tymon\JWTAuth\Facades\JWTAuth' => 'JWTAuth',
+    'Tymon\JWTAuth\Facades\JWTFactory' => 'JWTFactory',
+]);
+
 return $app;
